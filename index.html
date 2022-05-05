@@ -28,7 +28,233 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Hexo</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/10/06/%E9%98%B4%E5%A4%A9%E6%97%A5%E8%AE%B0/">阴天日记</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-10-06</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-10-06</span></span></div></header><div class="post-body"><div class="post-excerpt"><style>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Hexo</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2022/05/05/interface/">[ Untitled ]</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2022-05-05</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2022-05-05</span></span></div></header><div class="post-body"><div class="post-excerpt"><!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+
+    <style>
+        /* 大标题 */
+        .title {
+            color: #D9D919;
+            text-align: center;
+        }
+
+        .catalogue{
+            color: #00fff2;
+        }
+
+        /* 前引导 */
+
+        h4 {
+            color: tomato;
+        }
+
+        /* 小标题部分 */
+
+        h3 {
+            color: coral;
+        }
+
+        h1{
+            color: #D9D919;
+            text-align: center;
+        }
+
+        p {
+            color: #D9D919;
+        }
+
+        a:visited {
+        }
+
+        a:visited {
+            color: #551A8B;
+        }
+
+        a:link {
+            color: violet;
+        }
+
+        a:hover,
+        a:active {
+            color: cadetblue;
+        }
+    </style>
+
+</head>
+
+<body>
+<h1>Lambda表达式和函数式接口</h1>
+<!--  引导-->
+<h3 class="catalogue">目录</h3>
+
+<h4>&nbsp;&nbsp;<a href="#lambda">Lambda表达式</a></h4>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#what">Lambda表达式是什么</a></h5>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#why">为什么用Lambda表达式</a></h5>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#condition">使用Lambda的条件</a></h5>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#grammar">Lambda表达式的语法</a></h5>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#how">Lambda表达式具体如何使用</a></h5>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#scope">Lambda表达式的作用域</a></h5>
+
+<h4>&nbsp;&nbsp;<a href="#interface">函数式接口</a></h4>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#interWhat">函数式接口是什么</a></h5>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#interHow">如何使用函数式接口</a></h5>
+<h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#often">四个常用的函数式接口</a></h5>
+<!--  代码库链接-->
+<h4>由于代码比较多，所以统一将代码放在了<span class="exturl"><a class="exturl__link" href="https://github.com/Marary/---FunctionalInterface" target="_blank">代码库</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>中，建议配合代码食用此文 </h4>
+
+
+
+
+<!--大标题一-->
+
+        <h2 id="lambda" class="title">
+          <a href="#lambda" class="heading-link"><i class="fas fa-link"></i></a><span class="exturl"><a class="exturl__link" href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" target="_blank">Lambda表达式</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>
+</h2>
+      
+<!--  1-1-->
+
+        <h3 id="what">
+          <a href="#what" class="heading-link"><i class="fas fa-link"></i></a>Lambda表达式是什么</h3>
+      
+<p>Lambda表达式其实就是一种匿名函数，其可看作匿名内部类的简化</p>
+<!--  1-2-->
+
+        <h3 id="why">
+          <a href="#why" class="heading-link"><i class="fas fa-link"></i></a>为什么用Lambda表达式</h3>
+      
+<p>Lambda表达式允许将一个函数作为另外一个函数的参数； 我们可以把 Lambda 表达式理解为是一段可以传递的代码（将代码作为实参）,也可以理解为函数式编程，将一个函数作为参数进行传递。
+    所以Lambda能够简化我们的代码，当然前提是你的JDK版本要高于JDK8。</p>
+<!--  1-3-->
+
+        <h3 id="condition">
+          <a href="#condition" class="heading-link"><i class="fas fa-link"></i></a>使用Lambda表达式的条件</h3>
+      
+<p>只需要有函数式接口你就能使用Lambda表达式啦。</p>
+<!--  1-4-->
+
+        <h3 id="grammar">
+          <a href="#grammar" class="heading-link"><i class="fas fa-link"></i></a>Lambda表达式的语法</h3>
+      
+<p>无返回值时:(parameters)-> { 语句1;语句2;} <br> 有返回值时:(parameters) -> { 语句1;语句2; return result;}<br>
+    表达式左边是参数列表，参数名是可以随意起的（最好有实际意义），右边则是Lambda要实现功能的代码， 是主体部分，Lambda表达式内的参数和定义的变量不能和局部变量名相同。
+    其中的参数列表是依据接口中方法的参数并且与之一一对应，有无返回值也是看接口中方法是否有返回值，类型保持一致。<br>
+    而上述的语法体仍能化简:<br>
+    1.由于函数式接口的方法唯一(不考虑默认方法)，所以参数列表中变量类型可以省略，由编译器进行推导。<br>
+    (param1,param2)-> { 语句1;语句2;}<br>
+    (param1,param2) -> { 语句1;语句2; return result;} <br>
+    2.若参数列表的参数只有1个参数，则可以省略()，但是多参数和没有参数时是不能省略()的<br>
+    param-> { 语句1;语句2;}<br>
+    param -> { 语句1;语句2; return result;}<br>
+    3.若语句只有一条且无返回值则可以省略{}<br>
+    (parameters)-> 语句1;<br>
+    4.若主体只有一个返回语句则可省略return关键字<br>
+    (param1,param2) -> result;<br>
+</p>
+<!--  1-5-->
+
+        <h3 id="how">
+          <a href="#how" class="heading-link"><i class="fas fa-link"></i></a>Lambda具体该如何使用</h3>
+      
+<p>1.在主体中实现功能</p>
+<p>即将想要实现的功能代码直接写在主体中，看起来就像一个普通的方法，我们来想一下一个普通的方法是怎么写的，
+    再看一下lambda的语法，只不过是一个没有名字的匿名函数，它的使用方法就是调用接口的方法。</p>
+
+<p>2.方法引用</p>
+<p>要传递给Lambda表达式体的操作，已经有实现的方法了，就可以使用方法引用(方法签名需一致)。方法引用可以理解为一种特殊的方法调用形式。<br>
+  方法引用的语法:对象::实例方法名、类::静态方法名、类::实例方法名<br>
+  想要熟练地使用这些方法引用，首先你要熟悉前面的最基本的Lambda表达式的用法，并掌握函数式编程的方法和常用接口。</p>
+
+<p>3.构造器引用</p>
+<p>与函数式接口相结合，自动与函数式接口中的方法匹配，可以把构造器中的引用赋值给定义的方法。需要注意参数列表与构造器的参数列表要相一致。<br>
+  构造器引用语法:类名::new</p>
+
+<!--  1-6-->
+
+        <h3 id="scope">
+          <a href="#scope" class="heading-link"><i class="fas fa-link"></i></a>Lambda表达式的作用域</h3>
+      
+<p>Lambda表达式的局部变量可以访问局部变量，局部引用，静态变量和实例变量</p>
+<p>Lambda表达式访问局部变量时有限制，必须时最终变量或实际上的最终变量，即无法被重新赋值的变量</p>
+<p>Lambda表达式访问局部引用、静态变量和实例变量时没有限制</p>
+<p>对于上述情况的解释:为什么只对局部变量有限制？因为局部变量是存储在栈帧中的，其线程是私有的，若允许Lambda访问，则可能导致私有数据并发访问，从而导致线程不安全。而对于引用变量、实例变量
+和静态变量，他们都是储存在堆中的，堆是线程共享的，因此允许访问。对于局部变量而言，其线程无法看到其他线程对自己数据的操作，从而无法保证数据的同步，所以需要使用final进行修饰。而共享的线程
+是能够看到其他线程对数据的操作修改的，所以可以直接访问。</p>
+
+<!--大标题二-->
+
+        <h2 id="interface" class="title">
+          <a href="#interface" class="heading-link"><i class="fas fa-link"></i></a><span class="exturl"><a class="exturl__link" href="https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html" target="_blank">函数式接口</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></h2>
+      
+
+
+        <h3 id="interWhat">
+          <a href="#interWhat" class="heading-link"><i class="fas fa-link"></i></a>函数式接口是什么</h3>
+      
+<p>函数式接口就是接口的一种，只不过它有且仅有一个抽象方法。</p>
+
+
+        <h3 id="interHow">
+          <a href="#interHow" class="heading-link"><i class="fas fa-link"></i></a>如何使用函数式接口</h3>
+      
+<h4>&nbsp;&nbsp;自定义函数式接口</h4>
+<p>我们该如何写一个函数式接口呢，其实非常简单，因为我们已经知道接口怎么写了，那么我们就知道函数式接口该怎么写，只要接口有唯一的抽象方法就是函数式接口了。只不过在平时写函数式接口时
+我们习惯加上@FunctionalInterface注解，这个注解就是检查我们的接口是否符合函数式接口的要求的，以防我们犯错。</p>
+
+<h4>&nbsp;&nbsp;函数式接口作为参数</h4>
+<p>函数式接口作为参数其实并没有什么特别，就和普通的参数一样，只不过函数式接口可能更加庞大，所以要配合Lambda表达式使用。
+    如果你还是不理解函数式接口作为参数，那么你可以想一下类作为参数，其实这个也类似，只不过你在把它当作参数时并没有具体的实现
+    所以也就意味着你可以根据需求得到多种不同的实现</p>
+
+<h4>&nbsp;&nbsp;函数式接口作为返回值</h4>
+<p>看完了函数式接口作为参数，那么这个就很好理解了吧。同样的想一下类作为返回值的情况就不难理解了</p>
+
+
+        <h3 id="often">
+          <a href="#often" class="heading-link"><i class="fas fa-link"></i></a>四个常用的函数式接口</h3>
+      
+
+<!--函数式方法Java.lang.function包下  链接-->
+<p>在java.lang.function包下，有很多支持函数式编程的接口，可以说是非常方便，常用的接口有四个，我们下面将主要介绍它们的用法。 此包下更多接口使用请见
+    <span class="exturl"><a class="exturl__link" href="https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html" target="_blank">官方文档</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>。</p>
+<h4>&nbsp;&nbsp;Supplier接口</h4>
+<p>Supplier接口 有返回值 无参数,返回值类型为泛型需要你根据需要自己选择。 <br>
+    对于该接口的方法的简单介绍:<br>
+    该接口是生产型接口，泛型指定数据后，根据我们所写的逻辑返回值给我们使用。<br>
+    无参方法 T get():获得结果</p>
+
+<h4>&nbsp;&nbsp;Consumer接口</h4>
+<p> Consumer接口 有一个参数 无返回值,参数类型为泛型,根据自己选择。<br>
+    对于该接口的方法的简单介绍:<br>
+    该接口为消费型接口,其消费的数据由泛型决定<br>
+    void accept(T t):对给定的参数执行操作<br>
+    default Consumer &ltT&gt andThen(Consumer after):返回一个组合的操作，依次执行操作</p>
+
+<h4>&nbsp;&nbsp;Predicate接口</h4>
+<p>Predicate接口 有一个参数 有返回值,参数为泛型,返回值为boolean类型。<br>
+    对于该接口的方法的简单介绍:<br>
+    该接口常用于判断参数是否满足给定条件<br>
+    boolean test(T t):对给定的参数进行判断，其逻辑由使用者实现(一般使用Lambda表达式实现)<br>
+    default Predicate &ltT&gt negate():返回给定判断逻辑的否定<br>
+        default Predicate &ltT&gt and(Predicate other):返回组合判断，对于短路与<br>
+            default Predicate &ltT&gt or(Predicate other):返回组合判断，对应短路或</p>
+
+<h4>&nbsp;&nbsp;Function接口</h4>
+<p>* Function接口  有一个参数 有返回值,参数和返回值均为泛型。<br>
+    * 对于该接口方法发简单介绍:<br>
+    * 此接口通常用于对参数进行处理、转换，然后返回值<br>
+    * R apply(T t):将此函数应用于给定的参数<br>
+    * default &ltV&gt Function andThen(Function after):返回一个组合函数，依次将值应用于函数中</p>
+<p>如果能掌握这四个常用的函数式接口的话，那么Java.lang.function包下其他的函数式接口学起来就非常简单了</p>
+
+</body>
+
+</html></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/10/06/%E9%98%B4%E5%A4%A9%E6%97%A5%E8%AE%B0/">阴天日记</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">Created</span><span class="post-meta-item__value">2021-10-06</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">Updated</span><span class="post-meta-item__value">2021-10-06</span></span></div></header><div class="post-body"><div class="post-excerpt"><style>
 p{
         font-style: italic;text-indent: 2em;color:#EAADEA
     }
@@ -134,4 +360,4 @@ p{
 
 
 
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">Archives</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>John Doe</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.4.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">Archives</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>John Doe</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.4.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
